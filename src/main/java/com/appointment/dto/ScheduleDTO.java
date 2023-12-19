@@ -1,5 +1,6 @@
 package com.appointment.dto;
 
+import java.time.LocalDate;
 import java.time.LocalTime;
 
 public class ScheduleDTO {
@@ -9,7 +10,7 @@ public class ScheduleDTO {
 
 	private DoctorDTO doctor;
 
-	private String day;
+	private LocalDate day;
 
 	private LocalTime time;
 
@@ -21,7 +22,7 @@ public class ScheduleDTO {
 		super();
 	}
 
-	public ScheduleDTO(Long id, String name, DoctorDTO doctor, String day, LocalTime time, String timings,
+	public ScheduleDTO(Long id, String name, DoctorDTO doctor, LocalDate day, LocalTime time, String timings,
 			String nameOfPatient) {
 		super();
 		this.id = id;
@@ -57,11 +58,11 @@ public class ScheduleDTO {
 		this.doctor = doctor;
 	}
 
-	public String getDay() {
+	public LocalDate getDay() {
 		return day;
 	}
 
-	public void setDay(String day) {
+	public void setDay(LocalDate day) {
 		this.day = day;
 	}
 
