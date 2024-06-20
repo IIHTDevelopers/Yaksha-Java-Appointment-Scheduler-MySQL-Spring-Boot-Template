@@ -9,5 +9,8 @@ import com.appointment.entity.Doctor;
 
 @Repository
 public interface DoctorRepository extends JpaRepository<Doctor, Long> {
-	List<Doctor> findBySpecialty(String specialty);
+	// write your code for method to find list of doctors by their specialty,
+	// and it must return data in list
+	
+	
 }
